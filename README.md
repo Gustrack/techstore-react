@@ -1,3 +1,54 @@
+# TechStore - E-commerce de Tecnología
+Proyecto de e-commerce desarrollado con React 
+
+## Tecnologías
+
+- React 18
+- React Router DOM
+- Vite
+- Context API (para carrito de compras)
+
+## Instalación
+
+1. Clona el repositorio
+git clone https://github.com/tu-usuario/techstore-react.git
+
+2. Instala las dependencias
+npm install
+3. Inicia el servidor de desarrollo
+npm run dev
+
+## Características
+* Catálogo de productos por categorías
+* Carrito de compras con Context API
+* Detalle de productos
+* Filtrado por categorías (Laptops, Smartphones, Tablets)
+* Diseño responsive
+
+## Estructura del Proyecto
+src/  
+  ├── components/  
+  │   ├── Cart/  
+  │   ├── Item/  
+  │   ├── ItemDetail/  
+  │   ├── ItemDetailContainer/  
+  │   ├── ItemList/  
+  │   ├── ItemListContainer/  
+  │   └── NavBar/  
+  ├── context/  
+  │   └── CartContext.jsx  
+  ├── data/  
+  │   └── products.js  
+  ├── pages/  
+  │   ├── About.jsx  
+  │   ├── Contacto.jsx  
+  │   └── Inicio.jsx  
+  ├── App.jsx  
+  └── main.jsx  
+
+## Autor:
+Gustavo Atala   
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
