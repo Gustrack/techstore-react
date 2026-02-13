@@ -10,13 +10,14 @@ Proyecto de e-commerce desarrollado con React
 
 ## Instalación
 
-1. Clona el repositorio
-git clone https://github.com/tu-usuario/techstore-react.git
+1. Clona el repositorio  
+git clone https://github.com/tu-usuario/techstore-react.git  
 
-2. Instala las dependencias
-npm install
-3. Inicia el servidor de desarrollo
-npm run dev
+2. Instala las dependencias  
+npm install  
+
+3. Inicia el servidor de desarrollo  
+npm run dev  
 
 ## Características
 * Catálogo de productos por categorías
