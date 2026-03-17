@@ -1,0 +1,153 @@
+.item-detail {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.item-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.detail-info {
+    padding: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.detail-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 1rem 0;
+}
+
+.detail-stock {
+    color: #28a745;
+    margin-bottom: 2rem;
+}
+
+.item-count {
+    margin-top: 2rem;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.counter button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.counter button:hover:not(:disabled) {
+    background: #007bff;
+    color: white;
+}
+
+.counter button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.counter span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.add-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.add-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.added-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.low-stock {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stock-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.out-of-stock {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.in-cart-message {
+    background-color: #cce5ff;
+    color: #004085;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.stock-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
