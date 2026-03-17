@@ -92,9 +92,7 @@ El comando ejecutará `predeploy` (build) y luego publicará el contenido en la 
 
 ## Deploy en Vercel Pages
 
-[![Deploy con Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Gustrack/techstore-react)
-
-**URL:** [https://techstore-react.vercel.app](https://techstore-react.vercel.app)
+**URL:** [techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app](techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app)
 
 ## Estructura del proyecto
 
