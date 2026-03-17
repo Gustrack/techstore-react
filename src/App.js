@@ -11,8 +11,15 @@ import './App.css';
 function App() {
   console.log('🚀 App iniciando...');
   
-  // 🔴 IMPORTANTE: Hardcodeamos el basename para GitHub Pages
-  const basename = '/techstore-react';
+  // Determinar el basename según el entorno
+  // En Vercel (production) será vacío, en GitHub Pages será /techstore-react
+  const basename = process.env.NODE_ENV === 'production' && window.location.hostname.includes('github.io') 
+    ? '/techstore-react' 
+    : '';
+  
+  console.log('📌 Entorno:', process.env.NODE_ENV);
+  console.log('📌 Hostname:', window.location.hostname);
+  console.log('📌 Basename usado:', basename || '(vacío)');
   
   return (
     <BrowserRouter basename={basename}>
