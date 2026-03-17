@@ -12,68 +12,11 @@
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
 }
 
-.product-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-    display: flex;           /* Convertir en flexbox */
-    flex-direction: column;  /* Organizar en columna */
-    height: 100%;            /* Altura completa */
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.product-info {
-    padding: 1rem;
-    display: flex;           /* Convertir en flexbox */
-    flex-direction: column;  /* Organizar en columna */
-    flex: 1;                 /* Ocupar todo el espacio disponible */
-}
-
-.product-info h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
-    /* Altura mínima para títulos cortos */
-    min-height: 2.4rem;      /* Aprox 2 líneas de texto */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;   /* Limitar a 2 líneas */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-.greeting {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
+/* Tarjeta de producto */
 .product-card {
     background: white;
     border-radius: 12px;
@@ -98,58 +41,56 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
+/* Información del producto */
 .product-info {
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    background: white;
 }
 
+/* Título del producto - ALTURA FIJA */
 .product-title {
     margin: 0 0 0.8rem 0;
     font-size: 1.1rem;
     font-weight: 600;
     color: #333;
     line-height: 1.4;
-    min-height: 3rem; /* Altura fija para 2 líneas de texto */
+    height: 3rem; /* Altura fija para 2 líneas */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-break: break-word;
 }
 
+/* Precio */
 .price {
     font-size: 1.3rem;
     font-weight: 700;
     color: #007bff;
-    margin: 0.5rem 0 0.3rem 0;
+    margin: 0.3rem 0;
 }
 
+/* Stock */
 .stock {
     color: #28a745;
     font-size: 0.9rem;
     margin: 0.3rem 0 1rem 0;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
 }
 
-.stock::before {
-    content: "✓";
-    font-weight: bold;
-}
-
-/* Contenedor del botón con altura fija */
+/* Contenedor del botón - ALTURA FIJA */
 .button-container {
     margin-top: auto;
-    height: 42px; /* Altura fija para el contenedor del botón */
+    height: 48px; /* Altura fija para el botón */
     display: flex;
     align-items: flex-end;
 }
 
+/* Botón de detalle */
 .detail-btn {
     display: block;
     width: 100%;
@@ -161,18 +102,18 @@
     border-radius: 6px;
     transition: all 0.3s;
     font-weight: 500;
-    letter-spacing: 0.3px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,123,255,0.2);
+    height: 42px; /* Altura fija del botón */
+    line-height: 1.2;
+    box-sizing: border-box;
 }
 
 .detail-btn:hover {
     background-color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
-    transform: scale(1.02);
 }
 
+/* Mensaje de lista vacía */
 .empty-message {
     text-align: center;
     color: #666;
