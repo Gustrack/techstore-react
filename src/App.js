@@ -39,13 +39,13 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <CartProvider>
           <NavBar />
-          <Routes>
-            <Route path="/" element={<ItemListContainer greeting="Bienvenido a TechStore" />} />
-            <Route path="/category/:categoryId" element={<ItemListContainer />} />
-            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<CheckoutForm />} />
-          </Routes>
+            // TEMPORAL: Reemplaza TODO el contenido de las rutas con esto
+            <Routes>
+                <Route path="/" element={<div style={{padding: '100px', textAlign: 'center'}}>
+                    <h1 style={{color: 'blue'}}>¡LA PÁGINA FUNCIONA!</h1>
+                    <p>Este es un componente de prueba</p>
+                </div>} />
+            </Routes>
         </CartProvider>
       </BrowserRouter>
     </>
@@ -53,3 +53,12 @@ function App() {
 }
 
 export default App;
+
+
+//<Routes>
+//            <Route path="/" element={<ItemListContainer greeting="Bienvenido a TechStore" />} />
+//            <Route path="/category/:categoryId" element={<ItemListContainer />} />
+//            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+//            <Route path="/cart" element={<Cart />} />
+//            <Route path="/checkout" element={<CheckoutForm />} />
+//          </Routes>
