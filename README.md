@@ -86,13 +86,15 @@ Este proyecto está configurado para desplegarse fácilmente en GitHub Pages:
 npm run deploy
 ```
 
-[Deploy GitHub:] (techstore-react-gpe1-6ojqox8z9-gus-projects-1b65092e.vercel.app)
-
 El comando ejecutará `predeploy` (build) y luego publicará el contenido en la rama `gh-pages`.
+
+**URL:** [https://gustrack.github.io/techstore-react/](https://gustrack.github.io/techstore-react/)
 
 ## Deploy en Vercel Pages
 
-[Deploy Vercel:] (techstore-react-gpe1-6ojqox8z9-gus-projects-1b65092e.vercel.app)
+[![Deploy con Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Gustrack/techstore-react)
+
+**URL:** [https://techstore-react.vercel.app](https://techstore-react.vercel.app)
 
 ## Estructura del proyecto
 
