@@ -92,7 +92,7 @@ El comando ejecutará `predeploy` (build) y luego publicará el contenido en la 
 
 ## Deploy en Vercel Pages
 
-**URL:** [techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app](techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app)
+**URL:** [https://techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app](https://techstore-react-gpe1-3czqhpejl-gus-projects-1b65092e.vercel.app)
 
 ## Estructura del proyecto
 
