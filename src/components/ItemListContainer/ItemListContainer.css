@@ -56,34 +56,121 @@
     text-overflow: ellipsis;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.greeting {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,123,255,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+}
+
+.product-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    min-height: 3rem; /* Altura fija para 2 líneas de texto */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .price {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: #007bff;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0.3rem 0;
 }
 
 .stock {
-    color: #666;
+    color: #28a745;
     font-size: 0.9rem;
-    margin: 0.5rem 0;
+    margin: 0.3rem 0 1rem 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
-/* El botón se empujará hacia abajo automáticamente */
+.stock::before {
+    content: "✓";
+    font-weight: bold;
+}
+
+/* Contenedor del botón con altura fija */
+.button-container {
+    margin-top: auto;
+    height: 42px; /* Altura fija para el contenedor del botón */
+    display: flex;
+    align-items: flex-end;
+}
+
 .detail-btn {
     display: block;
+    width: 100%;
     background-color: #007bff;
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.7rem 0.5rem;
     text-align: center;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    margin-top: auto;        /* ¡CLAVE! Empuja el botón hacia abajo */
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,123,255,0.2);
 }
 
 .detail-btn:hover {
     background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    transform: scale(1.02);
 }
 
 .empty-message {
@@ -91,4 +178,8 @@
     color: #666;
     font-size: 1.2rem;
     margin-top: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }

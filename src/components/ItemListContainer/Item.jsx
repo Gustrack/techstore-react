@@ -7,12 +7,14 @@ const Item = ({ product }) => {
         <div className="product-card">
             <img src={product.image} alt={product.title} />
             <div className="product-info">
-                <h3>{product.title}</h3>
+                <h3 className="product-title">{product.title}</h3>
                 <p className="price">${product.price}</p>
                 <p className="stock">Stock: {product.stock}</p>
-                <Link to={`/item/${product.id}`} className="detail-btn">
-                    Ver detalle
-                </Link>
+                <div className="button-container">
+                    <Link to={`/item/${product.id}`} className="detail-btn">
+                        Ver detalle
+                    </Link>
+                </div>
             </div>
         </div>
     );
