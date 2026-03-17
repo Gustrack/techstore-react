@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/techstore-react/static/css/main.a051d11a.css",
+    "main.js": "/techstore-react/static/js/main.d3915743.js",
+    "index.html": "/techstore-react/index.html",
+    "main.a051d11a.css.map": "/techstore-react/static/css/main.a051d11a.css.map",
+    "main.d3915743.js.map": "/techstore-react/static/js/main.d3915743.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a051d11a.css",
+    "static/js/main.d3915743.js"
+  ]
+}
