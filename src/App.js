@@ -32,20 +32,31 @@ const TempDiv = () => {
 
 function App() {
   console.log('🚀 App iniciando...');
+  console.log('📌 PUBLIC_URL:', process.env.PUBLIC_URL);
+  
+  // 🔴 TEMPORAL: Hardcodeamos el basename para GitHub Pages
+  const basename = '/techstore-react';
   
   return (
     <>
       <TempDiv />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={basename}>
         <CartProvider>
           <NavBar />
-            // TEMPORAL: Reemplaza TODO el contenido de las rutas con esto
-            <Routes>
-                <Route path="/" element={<div style={{padding: '100px', textAlign: 'center'}}>
-                    <h1 style={{color: 'blue'}}>¡LA PÁGINA FUNCIONA!</h1>
-                    <p>Este es un componente de prueba</p>
-                </div>} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={
+              <div style={{padding: '100px', textAlign: 'center'}}>
+                <h1 style={{color: 'blue', fontSize: '48px'}}>✅ ¡FUNCIONA!</h1>
+                <p style={{fontSize: '24px'}}>El Router está funcionando en GitHub Pages</p>
+                <p style={{color: 'green'}}>Basename: {basename}</p>
+              </div>
+            } />
+            {/* Comentamos las rutas originales temporalmente */}
+            {/* <Route path="/category/:categoryId" element={<ItemListContainer />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutForm />} /> */}
+          </Routes>
         </CartProvider>
       </BrowserRouter>
     </>
@@ -53,12 +64,3 @@ function App() {
 }
 
 export default App;
-
-
-//<Routes>
-//            <Route path="/" element={<ItemListContainer greeting="Bienvenido a TechStore" />} />
-//            <Route path="/category/:categoryId" element={<ItemListContainer />} />
-//            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-//            <Route path="/cart" element={<Cart />} />
-//            <Route path="/checkout" element={<CheckoutForm />} />
-//          </Routes>
