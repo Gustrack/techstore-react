@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/techstore-react/static/css/main.a051d11a.css",
-    "main.js": "/techstore-react/static/js/main.d3915743.js",
-    "index.html": "/techstore-react/index.html",
-    "main.a051d11a.css.map": "/techstore-react/static/css/main.a051d11a.css.map",
-    "main.d3915743.js.map": "/techstore-react/static/js/main.d3915743.js.map"
+    "main.css": "./static/css/main.a051d11a.css",
+    "main.js": "./static/js/main.bfa24b36.js",
+    "index.html": "./index.html",
+    "main.a051d11a.css.map": "./static/css/main.a051d11a.css.map",
+    "main.bfa24b36.js.map": "./static/js/main.bfa24b36.js.map"
   },
   "entrypoints": [
     "static/css/main.a051d11a.css",
-    "static/js/main.d3915743.js"
+    "static/js/main.bfa24b36.js"
   ]
 }
